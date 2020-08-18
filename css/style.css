@@ -13,14 +13,14 @@ body{
 
 #container{
 	width: 80%;
-	height: 100px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background-color: white;
 	border-radius: 10px;
-	padding: 10px;
+	padding: 15px;
+	padding-bottom: 20px;
 	box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
 }
 
@@ -29,9 +29,39 @@ body{
 	height: 40px;
 	border: none;
 	border-bottom: 3px solid black;
-	margin-top: 32px;
+	margin-top: 20px;
 	outline: none;
 	font-size: 18px;
 	background-color: lightgray; 
 	text-align: center;
+}
+
+#second-input {
+	display: none;
+}
+
+#gradient-button {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 45px;
+	height: 45px;
+	margin: 15px 20px;
+	background-image: linear-gradient(white, lightgray);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: 0px 0.9px 5px 0px #808080;
+	transition: transform 0.3s;
+}
+
+#gradient-button p {
+	color: red;
+	font-size: 35px;
+	color: #00001a;
+} 
+
+.enabled {
+	transform: scale(.9,.9);
 }
